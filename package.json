@@ -1,0 +1,12 @@
+{
+  "name": "murmure-multi",
+  "version": "1.0.0",
+  "description": "Serveur multijoueur temps réel de Murmure (lobbies, chef, exclusions, relais du jeu)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test-server.js"
+  },
+  "engines": { "node": ">=18" },
+  "dependencies": { "ws": "^8.18.0" }
+}

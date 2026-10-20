@@ -1,0 +1,13 @@
+# Déploiement en un clic sur Render (Blueprint)
+services:
+  - type: web
+    name: murmure-multi
+    runtime: node
+    region: frankfurt
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
+    healthCheckPath: /health
+    envVars:
+      - key: ALLOWED_ORIGINS
+        value: https://f5fungames.com,https://www.f5fungames.com,http://f5fungames.com,http://www.f5fungames.com
